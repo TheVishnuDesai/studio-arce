@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme{
+  --font-montserrat: Montserrat, "sans-serif";
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #F4F3E1;
+}
+/* @keyframes scroll-x {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-x {
+  animation: scroll-x 10s linear infinite;
+}
+
+/* Pause animation on hover 
+.animate-scroll-x:hover {
+  animation-play-state: paused;
+} */
+
+
+.swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.navOption{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.overlay{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #74806a;
+  top: -100%;
+  left: 0;
+  transition: all ease-in-out 0.25s;
+}
+.navOption:hover .overlay{
+  top: 0;
+}
